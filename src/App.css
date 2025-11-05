@@ -152,17 +152,18 @@
 
 /* DÓŁ */
 .bottom {
-  background-image: url("/assets/images/frame-down.png");
-  background-size: 100% 100%;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  position: relative;
   width: 100%;
-  height: 20vw; /* zamiast aspect-ratio */
+  background-image: url("/assets/images/frame-down.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain; /* zamiast 100% 100% */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 1vw 0 0 0;
+  padding: 2vw 0; /* trochę przestrzeni */
+  min-height: 10vw; /* zapasowa wysokość gdy tło się nie załaduje */
+  box-sizing: border-box;
 }
 
 /* Text inside */

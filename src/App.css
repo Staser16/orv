@@ -103,8 +103,8 @@
 
 .d_button {
   width: 32vw;
-  height: 8vw;
-  margin-bottom: 10vw;
+  height: 3vw;
+  margin-bottom: 0vw;
 }
 .frame {
   display: flex;

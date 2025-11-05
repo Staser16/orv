@@ -72,11 +72,18 @@
 }
 
 .bottom {
+  position: relative;
+  width: 100%;
   background-image: url("/assets/images/frame-down.png");
-  width: auto;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  background-position: center bottom;
+  background-size: contain; /* zamiast 100% 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0vw 0; /* trochę przestrzeni */
+  min-height: 0vw; /* zapasowa wysokość gdy tło się nie załaduje */
+  box-sizing: border-box;
 }
 
 

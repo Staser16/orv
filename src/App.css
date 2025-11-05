@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@font-face {
+  font-family: 'BrushScriptMT';
+  src: url('./assets/fonts/BRUSHSCI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(126, 126, 126) 0%, black 10%, black 50%, black 90%, rgb(126, 126, 126) 100%);
+
+  color: white;
+}
+
+.glowna {
+  background-image: url("assets/images/button.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 400px;
+  display: flex;
+  align-items: center;
+  /* wyśrodkuj pionowo */
+  justify-content: center;
+  /* wyśrodkuj poziomo */
+}
+
+.change {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  /* wyśrodkuj pionowo */
+  justify-content: center;
+  /* wyśrodkuj poziomo */
+}
+
+.tytul {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.glowna select {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.top {
+  background-image: url("assets/images/frame-up.png");
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.center {
+  background-image: url("assets/images/frame-center.png");
+  width: auto;
+  background-position: center;
+  background-repeat: repeat-y;
+
+}
+
+.bottom {
+  background-image: url("assets/images/frame-down.png");
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.pierwsza-linia {
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  /* tu masz odstęp */
+}
+
+.zdjecie {
+  width: 120px;
+  height: 120px;
+}
+
+.wybor {
+  height: 100px;
+  font-size: 25px;
+  appearance: none;
+  border: 10px groove white
+}
+
+.d_button {
+  width: 60%;
+  height: 60%
+}
+
+.textPis {
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+* {
+  font-family: 'Merriweather', serif !important;
+}

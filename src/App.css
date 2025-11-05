@@ -33,7 +33,6 @@
 
 .change {
   height: 200px;
-  display: flex;
   align-items: center;
   /* wyśrodkuj pionowo */
   justify-content: center;
@@ -42,8 +41,10 @@
 
 .tytul {
   font-family: 'Great Vibes', cursive !important;
-  font-size: 48px;
+  font-size: 5vw;
   font-weight: normal;
+    justify-content: center; /* wyśrodkuj poziomo */
+  align-items: center; /* wyśrodkuj pionowo */
 }
 
 .glowna select {
@@ -89,7 +90,8 @@
 }
 
 .wybor {
-  height: 100px;
+    height: 100px;
+    width: 20vw;
   font-size: 25px;
   appearance: none;
   border: 10px groove white
@@ -102,7 +104,7 @@
 
 .textPis {
 
-  font-size: 20px;
+  font-size: 2vw;
   line-height: 1.8;
 }
 

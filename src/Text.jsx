@@ -5,10 +5,15 @@ function Text({rozdzial, setRozdzial}) {
 
     const [tekst, setTekst] = useState("");
 
-
+  
 
 useEffect(() => {
-  const name = `assets/orv/Orv${rozdzial}.txt`;
+  if(rozdzial>=689 && rozdzial<=942){
+  var name = `assets/orv/Orv${rozdzial}.txt`;
+}
+  else{
+  var name = `assets/orv/Orv689.txt`;
+  }
   fetch(name)
     .then(res => res.text())
     .then(data => {
@@ -23,15 +28,26 @@ useEffect(() => {
 
 
 return(
-<div className="container-lg">
-  <div className="row">
-    <div className="top">
+  <div className="frame">
+  <div className="side">
+    <div className="top"></div>
+    <div className="center">
+      <div
+        className="textPis"
+        dangerouslySetInnerHTML={{ __html: tekst }}
+      />
     </div>
-    <div className="bg-image center">
-    <div className="col-lg-6 mx-auto col-sm-4 col-md-6 col-xl-6 col-6 col-xxl-6 textPis" dangerouslySetInnerHTML={{ __html: tekst }} />
-    </div>
-    <div className='bottom'>
-    <button className='btn btn-transparent text-white d_button' style={{fontSize:"20px"}} onClick={()=>{if(rozdzial<941) setRozdzial(prev=>prev+1); window.scrollTo({top: 0, behavior: "smooth"})}}>Kolejny Rozdział</button>
+    <div className="bottom">
+      <button
+        className="btn btn-transparent text-white d_button"
+        style={{ fontSize: "2vw" }}
+        onClick={() => {
+          if (rozdzial < 941) setRozdzial((prev) => prev + 1);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+      >
+        Kolejny Rozdział
+      </button>
     </div>
   </div>
 </div>

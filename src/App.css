@@ -23,7 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 400px;
+  height: 18vw;
   display: flex;
   align-items: center;
   /* wyśrodkuj pionowo */
@@ -32,8 +32,8 @@
 }
 
 .change {
-  height: 200px;
-  display: flex;
+  height: 15vw;
+  margin-top: 4vw;
   align-items: center;
   /* wyśrodkuj pionowo */
   justify-content: center;
@@ -42,8 +42,11 @@
 
 .tytul {
   font-family: 'Great Vibes', cursive !important;
-  font-size: 48px;
-  font-weight: normal;
+  font-size: 2vw;
+  padding: 1vw;
+  font-weight: 800;
+  justify-content: center; /* wyśrodkuj poziomo */
+  align-items: center; /* wyśrodkuj pionowo */
 }
 
 .glowna select {
@@ -76,34 +79,99 @@
   height: 200px;
 }
 
+
 .pierwsza-linia {
-  font-size: 29px;
+    font-size: 1.5vw;
   font-weight: bold;
   margin-bottom: 1rem;
   /* tu masz odstęp */
 }
 
 .zdjecie {
-  width: 120px;
-  height: 120px;
+  width: 12vw;
+  height: 12vw;
 }
 
 .wybor {
-  height: 100px;
+  height: 5vw;
+  width: 20vw;
   font-size: 25px;
   appearance: none;
-  border: 10px groove white
+  margin-bottom: 20%;
+  border: 0.4vw groove white 
 }
 
 .d_button {
-  width: 60%;
-  height: 60%
+  width: 32vw;
+  height: 8vw;
+  margin-bottom: 10vw;
+}
+.frame {
+  display: flex;
+  justify-content: center;
+  margin-top: -3vw;
 }
 
-.textPis {
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 51vw;
+  line-height: 0; /* usuwa szczeliny wynikające z line-height */
+}
 
-  font-size: 20px;
-  line-height: 1.8;
+/* GÓRA */
+.top {
+  background-image: url("/assets/images/frame-up.png");
+  background-size: 100% 100%; /* dopasuj dokładnie */
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ŚRODEK */
+.center {
+  flex-grow: 1;
+  width: 100%;
+  background-image: url("/assets/images/frame-center.png");
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100% auto; /* zachowaj stałą szerokość */
+  margin: 0;
+  padding: 2vw 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* DÓŁ */
+.bottom {
+  background-image: url("/assets/images/frame-down.png");
+  background-size: 100% 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 4 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1vw 0 0 0;
+}
+
+/* Text inside */
+.textPis {
+  max-width: 80%;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  text-align: center;
+  color: white;
 }
 
 * {

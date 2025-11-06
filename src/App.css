@@ -176,6 +176,19 @@
   color: white;
 }
 
+@media screen and (min-width: 780px) {
+  .textPis{
+    font-size: 1.2vw;
+      line-height: 2.2vw;
+  }
+}
+@media screen and (max-width: 779px) {
+  .textPis{
+    font-size: 2.2vw;
+      line-height: 3.2vw;
+  }
+}
+
 * {
   font-family: 'Merriweather', serif !important;
 }

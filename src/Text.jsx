@@ -28,8 +28,8 @@ useEffect(() => {
 
 
 return(
-  <div className="frame row">
-  <div className="side col-md-12 col-lg-7">
+  <div className="frame row'">
+  <div className="side col-12 col-lg-7">
     <div className="top"></div>
     <div className="center">
       <div

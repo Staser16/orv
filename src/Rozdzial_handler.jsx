@@ -22,7 +22,7 @@ const Wynik = ({ rozdzial, setRozdzial }) => {
 
   return (
     <div className='change '>
-        <select className='wybor rounded mx-auto bg-transparent text-light' style={{ width: "20vw", fontSize: "2vw", marginTop: "2vw" }} value={rozdzial} onChange={handleChange}>
+        <select className='wybor rounded mx-auto bg-transparent text-light' style={{ marginTop: "2vw" }} value={rozdzial} onChange={handleChange}>
           {opcje}
         </select>
     </div>
@@ -79,32 +79,8 @@ function Rozdzial_handler() {
       </div>
       <Wynik rozdzial={rozdzial} setRozdzial={setRozdzial} />
       <Text rozdzial={rozdzial} setRozdzial={setRozdzial} />
-      <button className=' btn' style={{
-        position: "fixed",
-        width: "18vw",
-        bottom: "2vw",
-        right: "80vw",
-        fontSize: "1.2vw",
-        textAlign: "center",
-        color: "white",
-        borderRadius: "20px",
-        backgroundColor: "rgb(00,00,00,0.5)",
-        border: "0.6vw groove white"
-
-      }} onClick={() => { if (rozdzial > 689) setRozdzial(prev => prev - 1); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Poprzedni Rozdział</button>
-      <button className='mt-4 col-3 col-sm-2 col-md-2 col-lg-2 btn' style={{
-        position: "fixed",
-        bottom: "2vw",
-        width: "18vw",
-        textAlign: "center",
-        right: "1vw",
-        fontSize: "1.2vw",
-        color: "white",
-        borderRadius: "20px",
-        backgroundColor: "rgb(00,00,00,0.5)",
-        border: "0.6vw groove white"
-
-      }} onClick={() => { if (rozdzial < 941) setRozdzial(prev => prev + 1); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Kolejny Rozdział</button>
+      <button className='button_p' onClick={() => { if (rozdzial > 689) setRozdzial(prev => prev - 1); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Poprzedni Rozdział</button>
+      <button className='button_n'onClick={() => { if (rozdzial < 941) setRozdzial(prev => prev + 1); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Kolejny Rozdział</button>
     </div>
   );
 

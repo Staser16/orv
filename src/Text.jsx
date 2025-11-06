@@ -40,13 +40,15 @@ return(
     <div className="bottom">
       <button
         className="btn btn-transparent text-white d_button"
-        style={{ fontSize: "2vw", padding: "0vw" }}
+        style={{padding: "0vw" }}
         onClick={() => {
           if (rozdzial < 941) setRozdzial((prev) => prev + 1);
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
+        <h4>
         Kolejny Rozdział
+        </h4>
       </button>
     </div>
   </div>

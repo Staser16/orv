@@ -31,12 +31,12 @@
   /* wyśrodkuj poziomo */
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .glowna{
     height: 18vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .glowna{
     height: 40vw;
   }
@@ -61,14 +61,14 @@
   align-items: center; /* wyśrodkuj pionowo */
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .tytul{
     font-size: 2vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .tytul{
-    font-size: 5.2vw;
+    font-size: 4.2vw;
   }
 }
 
@@ -109,13 +109,13 @@
   margin-bottom: 1rem;
   /* tu masz odstęp */
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .pierwsza-linia{
     font-size: 2.5vw;
 
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .pierwsza-linia{
     font-size: 3.8vw;
 
@@ -136,15 +136,15 @@
   border: 0.4vw groove white 
 }
 
-@media screen and (max-width: 779px){
+@media screen and (max-width: 619px){
   .wybor{
-    font-size: 25px;
+    font-size: 18px;
     width: 40vw;
     height: 8vw;
   }
 }
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 620px){
   .wybor{
     font-size: 25px;
     width: 16vw;
@@ -159,16 +159,16 @@
   margin-bottom: 8vw;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .d_button{
    height: 5vw;
    margin-top: 2vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .d_button{
-
-    height: 4vw;
+    width: 60vw;
+    height: 6vw;
   }
 }
 
@@ -232,13 +232,13 @@
 
   box-sizing: border-box;
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .bottom{
     height: 22vw;
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .bottom{
     height: 12vw;
   }
@@ -254,13 +254,13 @@
   color: white;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .textPis{
     font-size: 1.2vw;
       line-height: 2.2vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .textPis{
       max-width: 75%;
     font-size: 3.2vw;
@@ -282,13 +282,13 @@
         border: 2px groove white;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 619px) {
   .button_n{
     font-size: 1.2vw;
       line-height: 2.2vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 620px) {
   .button_n{
     font-size: 3.2vw;
     width: 40vw;
@@ -310,13 +310,13 @@
         border: 2px groove white;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 620px) {
   .button_p{
     font-size: 1.2vw;
       line-height: 2.2vw;
   }
 }
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 619px) {
   .button_p{
     font-size: 3.2vw;
     width: 40vw;

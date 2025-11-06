@@ -29,7 +29,7 @@ useEffect(() => {
 
 return(
   <div className="frame row'">
-  <div className="side col-12 col-lg-7">
+  <div className="side col-12 col-md-7">
     <div className="top"></div>
     <div className="center">
       <div
@@ -46,9 +46,9 @@ return(
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-        <h4>
+        <h5>
         Kolejny Rozdział
-        </h4>
+        </h5>
       </button>
     </div>
   </div>

@@ -30,6 +30,15 @@ const Wynik = ({ rozdzial, setRozdzial }) => {
 };
 function Rozdzial_handler() {
 
+  useEffect(()=>{
+    var firstVisit = localStorage.getItem("firstVisit");
+
+    if(!firstVisit){
+      localStorage.setItem("firstVisit", "true");
+      setRozdzial(689);
+    }
+  },[]);
+
   //zapis do pamieci
   const [rozdzial, setRozdzial] = useState(() => {
     return Number(localStorage.getItem("rozdzial")) || 0;

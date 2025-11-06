@@ -59,7 +59,7 @@ function Rozdzial_handler() {
             height: "100%",
             maskImage: "linear-gradient(to right, black, transparent)",
             WebkitMaskImage: "linear-gradient(to right, black, transparent)"
-          }} />
+          }} className='d-md-block d-none'/>
         <img
           src="assets/images/LH.png" alt="example" style={{
             position: 'fixed',
@@ -69,12 +69,12 @@ function Rozdzial_handler() {
             height: "100%",
             maskImage: "linear-gradient(to left, black, transparent)",
             WebkitMaskImage: "linear-gradient(to left, black, transparent)"
-          }} />
+          }} className='d-md-block d-none'/>
 
       </div>
-      <div className='glowna '>
-        <div className='row'>
-          <div><h1 className='tytul' ><br />Omniscient Reader's Viewpoint<br />Side Stories</h1></div>
+      <div className='row ' style={{ width: "auto"}}>
+        <div className='glowna col-12 col-lg-9' style={{width: "100vw"}}>
+          <div><h1 className='tytul ' ><br />Omniscient Reader's Viewpoint<br />Side Stories</h1></div>
         </div>
       </div>
       <Wynik rozdzial={rozdzial} setRozdzial={setRozdzial} />

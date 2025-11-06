@@ -28,12 +28,12 @@ useEffect(() => {
 
 
 return(
-  <div className="frame">
-  <div className="side">
+  <div className="frame row">
+  <div className="side col-md-12 col-lg-7">
     <div className="top"></div>
     <div className="center">
       <div
-        className="textPis"
+        className="textPis md-fs-1"
         dangerouslySetInnerHTML={{ __html: tekst }}
       />
     </div>

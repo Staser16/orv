@@ -46,6 +46,7 @@
 .change {
   height: 15vw;
   margin-top: 4vw;
+  cursor: pointer;
   align-items: center;
   /* wyśrodkuj pionowo */
   justify-content: center;

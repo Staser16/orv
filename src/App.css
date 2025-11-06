@@ -105,20 +105,21 @@
 
 .pierwsza-linia {
     font-size: 2.5vw;
+    line-height: 3vw;
   font-weight: bold;
   margin-bottom: 1rem;
   /* tu masz odstęp */
 }
 @media screen and (min-width: 620px) {
   .pierwsza-linia{
+        line-height: 3vw;
     font-size: 2.5vw;
-
   }
 }
 @media screen and (max-width: 619px) {
   .pierwsza-linia{
     font-size: 3.8vw;
-
+    line-height: 5.5vw;
   }
 }
 
@@ -273,6 +274,7 @@
   bottom: 2vw;
           right: 1vw;
         width: 18vw;
+        height: 3vw;
         text-align: center;
 
         font-size: 1.2vw;
@@ -282,17 +284,43 @@
         border: 2px groove white;
 }
 
-@media screen and (min-width: 619px) {
+.button_n:hover{
+    right: 0.5vw;
+    bottom: 1.75vw;
+  width: 19vw;
+  height: 3.5vw;
+  background-color:  rgba(100, 100, 100, 0.3);
+}
+
+@media screen and (min-width: 620px) {
   .button_n{
     font-size: 1.2vw;
       line-height: 2.2vw;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 619px) {
   .button_n{
     font-size: 3.2vw;
     width: 40vw;
     height: 7vw;
+  }
+}
+@media screen and (min-width: 620px) {
+  .button_n:hover{
+        right: 0.5vw;
+    bottom: 1.75vw;
+  width: 19vw;
+  height: 3.5vw;
+  background-color:  rgba(100, 100, 100, 0.3);
+  }
+}
+@media screen and (max-width: 619px) {
+  .button_n:hover{
+    right: 0vw;
+    bottom: 1.5vw;
+  width: 42vw;
+  height: 8vw;
+  background-color:  rgba(100, 100, 100, 0.3);
   }
 }
 
@@ -301,6 +329,7 @@
   bottom: 2vw;
           right: 80vw;
         width: 18vw;
+        height: 3vw;
         text-align: center;
 
         font-size: 1.2vw;
@@ -308,6 +337,14 @@
         border-radius: 20px;
         background-color: rgb(00,00,00,0.5);
         border: 2px groove white;
+}
+
+.button_p:hover{
+  right: 79.5vw;
+    bottom: 1.75vw;
+  width: 19vw;
+  height: 3.5vw;
+  background-color:  rgba(100, 100, 100, 0.3);
 }
 
 @media screen and (min-width: 620px) {
@@ -322,6 +359,25 @@
     width: 40vw;
     height: 7vw;
     right: 58vw;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .button_p:hover{
+        right: 79.5vw;
+    bottom: 1.5vw;
+  width: 19vw;
+  height: 3.5vw;
+  background-color:  rgba(100, 100, 100, 0.3);
+  }
+}
+@media screen and (max-width: 619px) {
+  .button_p:hover{
+    right: 57vw;
+    bottom: 1.5vw;
+  width: 42vw;
+  height: 8vw;
+  background-color:  rgba(100, 100, 100, 0.3);
   }
 }
 

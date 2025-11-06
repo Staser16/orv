@@ -325,7 +325,22 @@
   }
 }
 
+.tytul_pojemnik{
+  width: 28vw;
+}
+@media screen and (max-width: 619px) {
+  .tytul_pojemnik{
+    width: 50vw;
+  }
+  
+}
+@media screen and (min-width: 620px) {
+  .tytul_pojemnik{
+    width: 28vw;
+  }
+  
+}
+
 * {
   font-family: 'Merriweather', serif !important;
 }
-

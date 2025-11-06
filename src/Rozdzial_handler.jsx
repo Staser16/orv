@@ -74,7 +74,7 @@ function Rozdzial_handler() {
       </div>
       <div className='row ' style={{ width: "auto"}}>
         <div className='glowna col-12 col-lg-9' style={{width: "100vw"}}>
-          <div><h1 className='tytul ' ><br />Omniscient Reader's Viewpoint<br />Side Stories</h1></div>
+          <div className='tytul_pojemnik'><h1 className='tytul ' ><br />Omniscient Reader's Viewpoint<br />Side Stories</h1></div>
         </div>
       </div>
       <Wynik rozdzial={rozdzial} setRozdzial={setRozdzial} />

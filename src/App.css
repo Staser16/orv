@@ -365,7 +365,7 @@
 @media screen and (min-width: 620px) {
   .button_p:hover{
         right: 79.5vw;
-    bottom: 1.5vw;
+    bottom: 1.75vw;
   width: 19vw;
   height: 3.5vw;
   background-color:  rgba(100, 100, 100, 0.3);
